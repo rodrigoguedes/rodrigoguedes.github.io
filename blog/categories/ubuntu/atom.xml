@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ubuntu | Rodrigo Guedes de Souza]]></title>
+  <link href="http://guedesdesouza.com.br/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://guedesdesouza.com.br/"/>
+  <updated>2014-04-13T19:05:28-03:00</updated>
+  <id>http://guedesdesouza.com.br/</id>
+  <author>
+    <name><![CDATA[Rodrigo Guedes de Souza]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Configurando Wireless No Ubuntu Para Notebook HP Pavilion Dv2610us]]></title>
+    <link href="http://guedesdesouza.com.br/blog/2014/04/13/configurando-wireless-no-ubuntu-para-notebook-hp-pavilion-dv2610us/"/>
+    <updated>2014-04-13T14:47:35-03:00</updated>
+    <id>http://guedesdesouza.com.br/blog/2014/04/13/configurando-wireless-no-ubuntu-para-notebook-hp-pavilion-dv2610us</id>
+    <content type="html"><![CDATA[<p>Após migrar meu notebook (HP dv2610us) para Ubuntu 7.10, a única coisa que me deixava a desejar era o funcionamento do wireless, após vários e vários dias pesquisando e testando diversos drivers e maneiras de reconhecer a mini-PCI Broadcom 94311 que vem junto a ele, consegui finalmente desfrutar do acesso wireless via Linux.</p>
+
+<p>Abaixo segue um breve tutorial de como fazer essa mágica:</p>
+
+<p><strong>1° Passo:</strong> (Instalar o ndiswrapper)</p>
+
+<p>Ndiswrapper é um emulador de drivers Windows para Linux, seu principal objetivo é fazer com que hardware baseado em Windows possam ser ativado no Linux. Ele também pode ser utilizado para outros hardware além de dispositivos wireless como: WebCam, Modems e Roteadores USB entre outros.</p>
+
+<p>Para instalar o ndiswrapper é só entrar no seu terminal e digitar:</p>
+
+<p><strong> $ sudo apt-get install ndiswrapper-common </strong></p>
+
+<p>e</p>
+
+<p><strong> $ sudo apt-get install ndiswrapper-utils-1.9 </strong></p>
+
+<p><strong> 2° Passo: </strong> (Desabilitar o driver nativo pre-instalado)
+No Ubuntu já existe um drive Broadcom 43xx previamente instalado que deve ser removido pelo simples motivo de não funcionar para a mini-PCI que vem junto ao dv2610us.</p>
+
+<p>Para desabilitar execute o seguinte comando</p>
+
+<p><strong> $ echo ‘blacklist bcm43xx’ | sudo tee -a /etc/modprobe.d/blacklist </strong></p>
+
+<p>e</p>
+
+<p><strong> $ sudo rmmod bcm43xx </strong></p>
+
+<p><strong> 3° Passo: </strong> (Baixar o drive Broadcom compatível)
+Esse é o ponto que me deixa mais indignado, pela lógica e muito provavelmente, você deve estar imaginando “isso se você já não foi logo fazendo :) ” é só ir na site da HP e fazer o download do drive disponível para esse módulo e pronto!!! É ai que você se engana hehehe. Não sei por qual motivo o drive da HP que deveria funcionar não funciona, então, após vários dias de pesquisa, encontrei um site “segue link no final do post” que ensinava a instalar essa mesma mini-PCI com o drive da Dell e então após os meus testes…… Uhuuu, funcionou.</p>
+
+<p>Então para fazer o download</p>
+
+<p><strong> $ wget <a href="http://ftp.us.dell.com/network/R151517.EXE">http://ftp.us.dell.com/network/R151517.EXE</a> </strong></p>
+
+<p>Após o download temos que descompactar</p>
+
+<p><strong> $ unzip -a R151517.EXE </strong></p>
+
+<p><strong> 4° Passo: </strong> (Instalar e ativar o drive no ndiswrapper)
+Após descompactar em um diretório temporário, por exemplo “temp”, execute os comandos:</p>
+
+<p><strong> $ sudo ndiswrapper -i temp/DRIVE/bcmwl5.sys </strong></p>
+
+<p>E depois temos que iniciar o módulo</p>
+
+<p><strong>$ sudo ndiswrapper -m</strong></p>
+
+<p><strong>$ sed -e ‘s/RadioState|1/RadioState|0/’ /etc/ndiswrapper/bcmwl5/*.con</strong></p>
+
+<p><strong>$ sudo modprobe ndiswrapper</strong></p>
+
+<p>Reinicie o computador para verificar se realmente o ndiswrapper carregou automática e execute o seguinte comando para listar os pontos de acesso wireless</p>
+
+<p><strong> $ iwlist scanning </strong></p>
+
+<p><strong> 6° e Último Passo: </strong> (configurando a rede)
+Como todo bom usuário Linux, configure a rede na mão com os seguinte comandos:</p>
+
+<p><strong>$ sudo iwconfig wlan0 essid NOME_DO_ACESSPOINT</strong> “nome listado pelo comando iwlist scanning”</p>
+
+<p><strong>$ sudo iwconfig wlan0 enc CHAVE</strong> “chave de acesso se utiliza WEP ou WPA – opcional caso venha utilizar rede segura ou pelo menos difícil de quebrar”
+<strong> $ sudo dhclient wlan0 </strong> “configura para pegar automaticamente um ip fornecido pelo acess point”</p>
+
+<p><del><strong>$ sudo ifconfig wlan0 down </strong> “desliga interface wlan0”**</del></p>
+
+<p><del><strong>$ sudo ifconfig wlan0 up </strong> “inicia interface wlan0”**</del></p>
+
+<p><strong>$ sudo iwconfig commit </strong> “grava alterações”**</p>
+
+<p>E pronto, você já está liberado para utilizar sua rede wireless.</p>
+
+<p>Referência: <a href="http://www.vivaolinux.com.br/dicas/verDica.php?codigo=9358">http://www.vivaolinux.com.br/dicas/verDica.php?codigo=9358</a></p>
+]]></content>
+  </entry>
+  
+</feed>

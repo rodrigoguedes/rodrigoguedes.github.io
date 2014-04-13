@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://guedesdesouza.com.br/sitemap.xml 
