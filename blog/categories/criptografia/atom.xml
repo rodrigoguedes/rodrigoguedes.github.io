@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Criptografia | Rodrigo Guedes de Souza]]></title>
+  <link href="http://guedesdesouza.com.br/blog/categories/criptografia/atom.xml" rel="self"/>
+  <link href="http://guedesdesouza.com.br/"/>
+  <updated>2014-04-14T11:17:07-03:00</updated>
+  <id>http://guedesdesouza.com.br/</id>
+  <author>
+    <name><![CDATA[Rodrigo Guedes de Souza]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Estudo Sobre a Implantação De Propriedades De Segurança Em Correio Eletrônico Através Do PGP]]></title>
+    <link href="http://guedesdesouza.com.br/blog/2014/04/14/estudo-sobre-a-implantacao-de-propriedades-de-seguranca-em-correio-eletronico-atraves-do-pgp/"/>
+    <updated>2014-04-14T10:54:10-03:00</updated>
+    <id>http://guedesdesouza.com.br/blog/2014/04/14/estudo-sobre-a-implantacao-de-propriedades-de-seguranca-em-correio-eletronico-atraves-do-pgp</id>
+    <content type="html"><![CDATA[<p>Para aqueles que querem proteger suas informações enviadas por email, segue minha monografia para o curso de Especialização em Ambientes de Desenvolvimento para Internet.
+Apesar de ter escrito há alguns anos ainda é uma ótima fonte de referência.</p>
+
+<p style="text-align:center;"> <strong>RESUMO</strong></p>
+
+<p>O correio eletrônico (email) é um dos melhores exemplos da onipresença que a Internet apresenta no cotidiano da sociedade moderna. Entretanto, muito embora já considerado um serviço essencial, o correio eletrônico é inerentemente inseguro. A
+despeito da ignorância da grande maioria dos usuários, o correio eletrônico, como utilizado comumente (através da RFC 822) não é capaz de garantir a entrega, a privacidade, a autenticação e o não repúdio das mensagens enviadas. A utilização de
+aplicações como o PGP, que permitem acrescentar propriedades de segurança ao correio eletrônico, têm se demonstrado de mínimo grau de penetração junto à comunidade da Internet. Este trabalho tem portanto o objetivo de realizar um estudo
+sobre a implantação de propriedades de segurança em correio eletrônico através de uma aplicação baseada em criptografia, cujo representante mais popular é o PGP. A partir dos resultados obtidos com este estudo, esperase poder divulgar e fornecer
+uma trilha para servir de guia à popularização dos serviços de segurança em correio eletrônico.</p>
+
+<p>Palavraschave:
+Segurança, correio eletrônico, PGP.</p>
+
+<p>Aluno: Rodrigo Guedes de Souza (<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#114;&#x6f;&#100;&#x72;&#105;&#x67;&#111;&#64;&#x67;&#x75;&#101;&#100;&#x65;&#115;&#100;&#101;&#x73;&#111;&#x75;&#x7a;&#97;&#x2e;&#99;&#x6f;&#109;&#x2e;&#x62;&#114;">&#114;&#111;&#100;&#114;&#x69;&#x67;&#111;&#x40;&#103;&#117;&#101;&#x64;&#101;&#115;&#x64;&#x65;&#115;&#x6f;&#117;&#x7a;&#x61;&#x2e;&#99;&#x6f;&#109;&#46;&#x62;&#114;</a>)
+Orientação: Prof. Msc. Edson Yanaga (<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#121;&#x61;&#110;&#x61;&#x67;&#97;&#x40;&#99;&#101;&#x73;&#x75;&#109;&#x61;&#114;&#46;&#98;&#114;">&#x79;&#97;&#x6e;&#x61;&#x67;&#97;&#x40;&#99;&#x65;&#x73;&#117;&#x6d;&#x61;&#114;&#x2e;&#x62;&#114;</a>)</p>
+
+<p><a href="https://drive.google.com/file/d/0B3U4JYDYh4XEYnh2QWJrZzV2Sk0/edit?usp=sharing">Download Aqui&hellip;</a></p>
+]]></content>
+  </entry>
+  
+</feed>

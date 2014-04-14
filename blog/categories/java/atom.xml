@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Java | Rodrigo Guedes de Souza]]></title>
+  <link href="http://guedesdesouza.com.br/blog/categories/java/atom.xml" rel="self"/>
+  <link href="http://guedesdesouza.com.br/"/>
+  <updated>2014-04-14T11:17:07-03:00</updated>
+  <id>http://guedesdesouza.com.br/</id>
+  <author>
+    <name><![CDATA[Rodrigo Guedes de Souza]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Desenvolvimento De Uma Aplicação Frente De Caixa Automatizada Para O Varejo Utilizando JAVA E RFID]]></title>
+    <link href="http://guedesdesouza.com.br/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid/"/>
+    <updated>2014-04-14T11:10:30-03:00</updated>
+    <id>http://guedesdesouza.com.br/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid</id>
+    <content type="html"><![CDATA[<p>Segue mais um post onde disponibilizo minha monografia realizada na Especialização em Desenvolvimento Orientado a Objetos em JAVA.
+A proposta dessa monografia foi realizar um levantamento bibliográfico sobre a tecnologia RFID e utilizá-la com a plataforma Java para resolver um grande problema enfrentado pelo setor varejista.</p>
+
+<p style="text-align:center;"> <strong>RESUMO</strong></p>
+
+<p>As longas filas nos caixas, do setor varejista, é um dos diversos fatores que causam constrangimentos e insatisfações a consumidores modernos, que esperam por um rápido atendimento na hora de efetuar suas compras. Por este motivo os clientes procuram outros estabelecimentos, na busca de acharem um ambiente ideal, sem transtornos. Deste modo um processo automatizado auxilia efetuar vendas rápidas e eficientes trazendo lucros para o negócio e satisfazendo o desejo do cliente. Neste momento a utilização da tecnologia de identificação por rádio freqüência (RFID) é
+primordial, pois ela elimina a entrada de dados manuais tornando o processo de efetuação de venda mais rápida e precisa. Este trabalho tem, portanto, o objetivo de realizar um estudo sobre a tecnologia de identificação por rádio freqüência e o
+Middleware SUN JAVA SYSTEM RFID para utilizarem como ferramentas. A partir dos resultados obtidos neste estudo, será desenvolvida uma aplicação desktop frente de caixa específica para o varejo, desenvolvido em JAVA para agilizar o processamento dos itens de venda, minimizando o problema das grandes filas de caixas.</p>
+
+<p>Palavras chave:
+Identificação por Rádio Freqüência, JAVA, Fila de Caixa.</p>
+
+<p>Aluno: Rodrigo Guedes de Souza (<a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#114;&#x6f;&#x64;&#114;&#x69;&#x67;&#111;&#64;&#x67;&#117;&#101;&#x64;&#101;&#115;&#x64;&#x65;&#x73;&#111;&#x75;&#122;&#97;&#46;&#99;&#x6f;&#109;&#x2e;&#x62;&#x72;">&#x72;&#111;&#100;&#x72;&#x69;&#x67;&#x6f;&#64;&#103;&#x75;&#101;&#x64;&#x65;&#x73;&#100;&#101;&#x73;&#111;&#x75;&#x7a;&#97;&#46;&#x63;&#111;&#109;&#x2e;&#x62;&#114;</a>)
+Orientação: Prof. Msc. Edson Yanaga (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#x3a;&#121;&#x61;&#x6e;&#97;&#x67;&#97;&#x40;&#x63;&#101;&#115;&#x75;&#109;&#x61;&#x72;&#x2e;&#98;&#114;">&#x79;&#x61;&#110;&#x61;&#x67;&#97;&#x40;&#x63;&#101;&#x73;&#x75;&#x6d;&#x61;&#x72;&#x2e;&#98;&#114;</a>)</p>
+
+<p><a href="https://drive.google.com/file/d/0B3U4JYDYh4XEbEhkU204V3A3d1E/edit?usp=sharing">Download Aqui…</a></p>
+]]></content>
+  </entry>
+  
+</feed>

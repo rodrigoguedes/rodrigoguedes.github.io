@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Desenvolvimento De Uma Aplicação Frente De Caixa Automatizada Para O Varejo Utilizando JAVA E RFID - Rodrigo Guedes de Souza</title>
+  <meta name="author" content="Rodrigo Guedes de Souza">
+
+  
+  <meta name="description" content="Segue mais um post onde disponibilizo minha monografia realizada na Especialização em Desenvolvimento Orientado a Objetos em JAVA.
+A proposta dessa &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guedesdesouza.com.br/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rodrigo Guedes de Souza" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39887573-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rodrigo Guedes de Souza</a></h1>
+  
+    <h2>Desenvolvedor e apaixonado por tecnologia.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guedesdesouza.com.br" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Desenvolvimento De Uma Aplicação Frente De Caixa Automatizada Para O Varejo Utilizando JAVA E RFID</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-14T11:10:30-03:00" pubdate data-updated="true">Apr 14<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Segue mais um post onde disponibilizo minha monografia realizada na Especialização em Desenvolvimento Orientado a Objetos em JAVA.
+A proposta dessa monografia foi realizar um levantamento bibliográfico sobre a tecnologia RFID e utilizá-la com a plataforma Java para resolver um grande problema enfrentado pelo setor varejista.</p>
+
+<p style="text-align:center;"> <strong>RESUMO</strong></p>
+
+<p>As longas filas nos caixas, do setor varejista, é um dos diversos fatores que causam constrangimentos e insatisfações a consumidores modernos, que esperam por um rápido atendimento na hora de efetuar suas compras. Por este motivo os clientes procuram outros estabelecimentos, na busca de acharem um ambiente ideal, sem transtornos. Deste modo um processo automatizado auxilia efetuar vendas rápidas e eficientes trazendo lucros para o negócio e satisfazendo o desejo do cliente. Neste momento a utilização da tecnologia de identificação por rádio freqüência (RFID) é
+primordial, pois ela elimina a entrada de dados manuais tornando o processo de efetuação de venda mais rápida e precisa. Este trabalho tem, portanto, o objetivo de realizar um estudo sobre a tecnologia de identificação por rádio freqüência e o
+Middleware SUN JAVA SYSTEM RFID para utilizarem como ferramentas. A partir dos resultados obtidos neste estudo, será desenvolvida uma aplicação desktop frente de caixa específica para o varejo, desenvolvido em JAVA para agilizar o processamento dos itens de venda, minimizando o problema das grandes filas de caixas.</p>
+
+<p>Palavras chave:
+Identificação por Rádio Freqüência, JAVA, Fila de Caixa.</p>
+
+<p>Aluno: Rodrigo Guedes de Souza (<a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x72;&#x6f;&#100;&#114;&#x69;&#103;&#x6f;&#x40;&#103;&#117;&#x65;&#x64;&#x65;&#x73;&#100;&#101;&#115;&#111;&#117;&#122;&#x61;&#46;&#x63;&#x6f;&#109;&#46;&#x62;&#x72;">&#114;&#x6f;&#x64;&#x72;&#105;&#x67;&#x6f;&#x40;&#x67;&#117;&#x65;&#x64;&#101;&#115;&#100;&#x65;&#x73;&#x6f;&#x75;&#122;&#x61;&#x2e;&#99;&#111;&#x6d;&#x2e;&#98;&#x72;</a>)
+Orientação: Prof. Msc. Edson Yanaga (<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x79;&#x61;&#x6e;&#x61;&#103;&#x61;&#64;&#x63;&#x65;&#115;&#x75;&#109;&#97;&#114;&#46;&#98;&#x72;">&#x79;&#97;&#110;&#x61;&#103;&#97;&#64;&#x63;&#x65;&#x73;&#x75;&#109;&#x61;&#x72;&#46;&#98;&#x72;</a>)</p>
+
+<p><a href="https://drive.google.com/file/d/0B3U4JYDYh4XEbEhkU204V3A3d1E/edit?usp=sharing">Download Aqui…</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rodrigo Guedes de Souza</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-14T11:10:30-03:00" pubdate data-updated="true">Apr 14<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/identificacao-por-radio-frequencia/'>Identificação por Rádio Freqüência</a>, <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/rfid/'>rfid</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://guedesdesouza.com.br/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid/" data-via="" data-counturl="http://guedesdesouza.com.br/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/14/estudo-sobre-a-implantacao-de-propriedades-de-seguranca-em-correio-eletronico-atraves-do-pgp/" title="Previous Post: Estudo Sobre a Implantação de Propriedades de Segurança em Correio Eletrônico Através do PGP">&laquo; Estudo Sobre a Implantação de Propriedades de Segurança em Correio Eletrônico Através do PGP</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid/">Desenvolvimento De Uma Aplicação Frente De Caixa Automatizada Para O Varejo Utilizando JAVA E RFID</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/14/estudo-sobre-a-implantacao-de-propriedades-de-seguranca-em-correio-eletronico-atraves-do-pgp/">Estudo Sobre a Implantação De Propriedades De Segurança Em Correio Eletrônico Através Do PGP</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/14/utilizando-captcha-com-servlet/">Utilizando Captcha Com Servlet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/configurando-wireless-no-ubuntu-para-notebook-hp-pavilion-dv2610us/">Configurando Wireless No Ubuntu Para Notebook HP Pavilion Dv2610us</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Rodrigo Guedes de Souza -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
