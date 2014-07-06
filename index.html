@@ -9,8 +9,7 @@
   <meta name="author" content="Rodrigo Guedes de Souza">
 
   
-  <meta name="description" content="Segue mais um post onde disponibilizo minha monografia realizada na Especialização em Desenvolvimento Orientado a Objetos em JAVA.
-A proposta dessa &hellip;">
+  <meta name="description" content="No termina/shell do Mac OS X você pode usar [TAB] para autocompletar caminhos de arquivos e diretórios. Já imaginou como seria incrível se pudesse &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,6 +83,106 @@ A proposta dessa &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/06/autocomplete-comandos-do-git-em-seu-terminal-mac-os/">Autocomplete Comandos Do Git Em Seu Terminal Mac OS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-06T16:19:12-03:00" pubdate data-updated="true">Jul 6<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>No termina/shell do Mac OS X você pode usar [TAB] para autocompletar caminhos de arquivos e diretórios. Já imaginou como seria incrível se pudesse usar essa mesma função para comandos git assim como nome de branches?</p>
+
+<p>Então você pode!!! Veja como.</p>
+
+<p>O primeiro passo é baixar o script <code>git-completion.bash</code> (veja <a href="https://github.com/git/git/blob/master/contrib/completion/git-completion.bash">aqui</a>) em seu diretório raiz executando o seguinte comando:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>O próximo passo é adicionar o código abaixo em seu arquivo <code>~/.bash_profile</code>.
+Este trecho de código executa o script git autocomplete caso ele exista.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="k">if</span> <span class="o">[</span> -f ~/.git-completion.bash <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'>  . ~/.git-completion.bash
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Agora abra um novo shell, vá para um diretório que contenha um repositório git e comece a digitar um comando. Agora você pode usar [TAB] para autocompletar comandos do git e nomes de branch.</p>
+
+<p>Por exemplo, se você digitar git + espaço + [TAB], você vai ter como resultado uma lista contendo todos os comandos disponíveis do git:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>add                      config                   instaweb                 reset
+</span><span class='line'>am                       credential               log                      revert
+</span><span class='line'>annotate                 credential-osxkeychain   merge                    rm
+</span><span class='line'>apply                    describe                 mergetool                send-email
+</span><span class='line'>archive                  diff                     mv                       shortlog
+</span><span class='line'>bisect                   difftool                 name-rev                 show
+</span><span class='line'>blame                    fetch                    notes                    show-branch
+</span><span class='line'>branch                   filter-branch            p4                       stage
+</span><span class='line'>bundle                   format-patch             pull                     stash
+</span><span class='line'>checkout                 fsck                     push                     status
+</span><span class='line'>cherry                   gc                       rebase                   submodule
+</span><span class='line'>cherry-pick              get-tar-commit-id        reflog                   subtree
+</span><span class='line'>citool                   grep                     relink                   svn
+</span><span class='line'>clean                    gui                      remote                   tag
+</span><span class='line'>clone                    <span class="nb">help                     </span>repack                   whatchanged
+</span><span class='line'>column                   imap-send                replace
+</span><span class='line'>commit                   init                     request-pull
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>A brincadeira fica ainda mais interessante quando você trabalha com várias branches. O processo de checkout e push fica bem mais rápido!!! Bom, isso para quem gosta de linhas de comandos ;)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid/">Desenvolvimento De Uma Aplicação Frente De Caixa Automatizada Para O Varejo Utilizando JAVA E RFID</a></h1>
     
     
@@ -119,8 +218,8 @@ Middleware SUN JAVA SYSTEM RFID para utilizarem como ferramentas. A partir dos r
 <p>Palavras chave:
 Identificação por Rádio Freqüência, JAVA, Fila de Caixa.</p>
 
-<p>Aluno: Rodrigo Guedes de Souza (<a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x72;&#x6f;&#100;&#114;&#x69;&#103;&#x6f;&#x40;&#103;&#117;&#x65;&#x64;&#x65;&#x73;&#100;&#101;&#115;&#111;&#117;&#122;&#x61;&#46;&#x63;&#x6f;&#109;&#46;&#x62;&#x72;">&#114;&#x6f;&#x64;&#x72;&#105;&#x67;&#x6f;&#x40;&#x67;&#117;&#x65;&#x64;&#101;&#115;&#100;&#x65;&#x73;&#x6f;&#x75;&#122;&#x61;&#x2e;&#99;&#111;&#x6d;&#x2e;&#98;&#x72;</a>)
-Orientação: Prof. Msc. Edson Yanaga (<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x79;&#x61;&#x6e;&#x61;&#103;&#x61;&#64;&#x63;&#x65;&#115;&#x75;&#109;&#97;&#114;&#46;&#98;&#x72;">&#x79;&#97;&#110;&#x61;&#103;&#97;&#64;&#x63;&#x65;&#x73;&#x75;&#109;&#x61;&#x72;&#46;&#98;&#x72;</a>)</p>
+<p>Aluno: Rodrigo Guedes de Souza (<a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#x72;&#111;&#x64;&#x72;&#x69;&#x67;&#x6f;&#x40;&#x67;&#117;&#101;&#x64;&#101;&#115;&#x64;&#101;&#115;&#x6f;&#x75;&#122;&#97;&#46;&#x63;&#111;&#109;&#x2e;&#98;&#114;">&#114;&#x6f;&#x64;&#x72;&#x69;&#103;&#x6f;&#64;&#103;&#117;&#x65;&#x64;&#101;&#115;&#x64;&#101;&#115;&#111;&#x75;&#x7a;&#97;&#46;&#x63;&#111;&#109;&#46;&#x62;&#114;</a>)
+Orientação: Prof. Msc. Edson Yanaga (<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x79;&#97;&#x6e;&#97;&#103;&#x61;&#x40;&#99;&#x65;&#x73;&#x75;&#109;&#97;&#x72;&#x2e;&#x62;&#x72;">&#x79;&#97;&#110;&#97;&#103;&#x61;&#64;&#99;&#101;&#x73;&#x75;&#x6d;&#x61;&#x72;&#46;&#98;&#114;</a>)</p>
 
 <p><a href="https://drive.google.com/file/d/0B3U4JYDYh4XEbEhkU204V3A3d1E/edit?usp=sharing">Download Aqui…</a></p>
 </div>
@@ -172,8 +271,8 @@ uma trilha para servir de guia à popularização dos serviços de segurança em
 <p>Palavraschave:
 Segurança, correio eletrônico, PGP.</p>
 
-<p>Aluno: Rodrigo Guedes de Souza (<a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#114;&#x6f;&#x64;&#x72;&#x69;&#103;&#x6f;&#64;&#103;&#117;&#x65;&#x64;&#x65;&#115;&#100;&#101;&#x73;&#111;&#x75;&#122;&#97;&#x2e;&#x63;&#111;&#109;&#46;&#98;&#114;">&#x72;&#x6f;&#100;&#x72;&#105;&#103;&#111;&#x40;&#103;&#x75;&#x65;&#100;&#101;&#115;&#100;&#x65;&#115;&#111;&#x75;&#x7a;&#97;&#46;&#99;&#111;&#x6d;&#x2e;&#98;&#x72;</a>)
-Orientação: Prof. Msc. Edson Yanaga (<a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#97;&#110;&#97;&#103;&#97;&#x40;&#x63;&#101;&#115;&#x75;&#x6d;&#97;&#x72;&#46;&#98;&#x72;">&#121;&#97;&#x6e;&#97;&#x67;&#x61;&#x40;&#x63;&#x65;&#x73;&#x75;&#x6d;&#97;&#x72;&#46;&#98;&#114;</a>)</p>
+<p>Aluno: Rodrigo Guedes de Souza (<a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#x72;&#x6f;&#x64;&#x72;&#x69;&#103;&#x6f;&#x40;&#103;&#x75;&#101;&#100;&#101;&#x73;&#x64;&#x65;&#115;&#111;&#117;&#x7a;&#x61;&#46;&#99;&#111;&#109;&#46;&#x62;&#x72;">&#114;&#x6f;&#x64;&#x72;&#x69;&#103;&#111;&#64;&#103;&#x75;&#x65;&#100;&#101;&#x73;&#x64;&#x65;&#x73;&#111;&#117;&#x7a;&#x61;&#46;&#99;&#111;&#109;&#46;&#98;&#114;</a>)
+Orientação: Prof. Msc. Edson Yanaga (<a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x79;&#97;&#x6e;&#x61;&#103;&#97;&#64;&#x63;&#101;&#115;&#117;&#x6d;&#x61;&#114;&#x2e;&#98;&#x72;">&#x79;&#97;&#x6e;&#x61;&#103;&#x61;&#64;&#99;&#101;&#115;&#117;&#x6d;&#x61;&#x72;&#46;&#x62;&#114;</a>)</p>
 
 <p><a href="https://drive.google.com/file/d/0B3U4JYDYh4XEYnh2QWJrZzV2Sk0/edit?usp=sharing">Download Aqui&hellip;</a></p>
 </div>
@@ -871,6 +970,10 @@ Como todo bom usuário Linux, configure a rede na mão com os seguinte comandos:
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/06/autocomplete-comandos-do-git-em-seu-terminal-mac-os/">Autocomplete Comandos Do Git Em Seu Terminal Mac OS</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/04/14/desenvolvimento-de-uma-aplicacao-frente-de-caixa-automatizada-para-o-varejo-utilizando-java-e-rfid/">Desenvolvimento De Uma Aplicação Frente De Caixa Automatizada Para O Varejo Utilizando JAVA E RFID</a>

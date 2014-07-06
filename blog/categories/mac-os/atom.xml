@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mac Os | Rodrigo Guedes de Souza]]></title>
+  <link href="http://guedesdesouza.com.br/blog/categories/mac-os/atom.xml" rel="self"/>
+  <link href="http://guedesdesouza.com.br/"/>
+  <updated>2014-07-06T17:11:44-03:00</updated>
+  <id>http://guedesdesouza.com.br/</id>
+  <author>
+    <name><![CDATA[Rodrigo Guedes de Souza]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Autocomplete Comandos Do Git Em Seu Terminal Mac OS]]></title>
+    <link href="http://guedesdesouza.com.br/blog/2014/07/06/autocomplete-comandos-do-git-em-seu-terminal-mac-os/"/>
+    <updated>2014-07-06T16:19:12-03:00</updated>
+    <id>http://guedesdesouza.com.br/blog/2014/07/06/autocomplete-comandos-do-git-em-seu-terminal-mac-os</id>
+    <content type="html"><![CDATA[<p>No termina/shell do Mac OS X você pode usar [TAB] para autocompletar caminhos de arquivos e diretórios. Já imaginou como seria incrível se pudesse usar essa mesma função para comandos git assim como nome de branches?</p>
+
+<p>Então você pode!!! Veja como.</p>
+
+<p>O primeiro passo é baixar o script <code>git-completion.bash</code> (veja <a href="https://github.com/git/git/blob/master/contrib/completion/git-completion.bash">aqui</a>) em seu diretório raiz executando o seguinte comando:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>curl &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash&quot;</span>&gt;https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash&lt;/a&gt; -o ~/.git-completion.bash
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>O próximo passo é adicionar o código abaixo em seu arquivo <code>~/.bash_profile</code>.
+Este trecho de código executa o script git autocomplete caso ele exista.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="k">if</span> <span class="o">[</span> -f ~/.git-completion.bash <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'>  . ~/.git-completion.bash
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Agora abra um novo shell, vá para um diretório que contenha um repositório git e comece a digitar um comando. Agora você pode usar [TAB] para autocompletar comandos do git e nomes de branch.</p>
+
+<p>Por exemplo, se você digitar git + espaço + [TAB], você vai ter como resultado uma lista contendo todos os comandos disponíveis do git:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>add                      config                   instaweb                 reset
+</span><span class='line'>am                       credential               log                      revert
+</span><span class='line'>annotate                 credential-osxkeychain   merge                    rm
+</span><span class='line'>apply                    describe                 mergetool                send-email
+</span><span class='line'>archive                  diff                     mv                       shortlog
+</span><span class='line'>bisect                   difftool                 name-rev                 show
+</span><span class='line'>blame                    fetch                    notes                    show-branch
+</span><span class='line'>branch                   filter-branch            p4                       stage
+</span><span class='line'>bundle                   format-patch             pull                     stash
+</span><span class='line'>checkout                 fsck                     push                     status
+</span><span class='line'>cherry                   gc                       rebase                   submodule
+</span><span class='line'>cherry-pick              get-tar-commit-id        reflog                   subtree
+</span><span class='line'>citool                   grep                     relink                   svn
+</span><span class='line'>clean                    gui                      remote                   tag
+</span><span class='line'>clone                    <span class="nb">help                     </span>repack                   whatchanged
+</span><span class='line'>column                   imap-send                replace                &lt;br/&gt;
+</span><span class='line'>commit                   init                     request-pull &lt;br/&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>A brincadeira fica ainda mais interessante quando você trabalha com várias branches. O processo de checkout e push fica bem mais rápido!!! Bom, isso para quem gosta de linhas de comandos ;)</p>
+]]></content>
+  </entry>
+  
+</feed>
